@@ -182,6 +182,7 @@
             this.MainMenuStrip = this.menu;
             this.Name = "Minesweeper";
             this.Text = "Minesweeper";
+            this.Load += new System.EventHandler(this.Minesweeper_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.mineandtimepanel.ResumeLayout(false);
