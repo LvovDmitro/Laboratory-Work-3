@@ -12,9 +12,16 @@ namespace Лабораторная_работа__3
 {
     public partial class Settings : Form
     {
-        public Settings()
+        Minesweeper Main;
+        public Settings(Minesweeper main)
         {
             InitializeComponent();
+            Main = main;
+        }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
