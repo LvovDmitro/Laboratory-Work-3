@@ -122,7 +122,7 @@ namespace Лабораторная_работа__3
                         }
                         if (pState[i, j] == 3)
                         {
-                            g.DrawImage(Properties.Resources.Doubt, nOffsetX + 34 * (i - 1) + 1 + 4, nOffsetY + 34 * (j - 1) + 1 + 2);   
+                            g.DrawImage(Properties.Resources.Flag, nOffsetX + 34 * (i - 1) + 1 + 4, nOffsetY + 34 * (j - 1) + 1 + 2);   
                         }
                     }
                     else if (pState[i, j] == 1) 
@@ -156,7 +156,7 @@ namespace Лабораторная_работа__3
                 }
             }
         }
-        private void UpdateSize() //изменение размера в зависимости от окна
+        private void UpdateSize()
         {
             int nOffsetX = this.Width - this.ClientSize.Width;  // высота строки заголовка
             int nOffsetY = this.Height - this.ClientSize.Height;    // ширина левой и правой границы
@@ -224,9 +224,9 @@ namespace Лабораторная_работа__3
             }
             this.Refresh();    // перерисовка минных полей
         }
-        private void timer_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
-            labeltimer.Text = Convert.ToString(Convert.ToInt32(labeltimer.Text) + 1); // увеличение на 1 сек
+            labeltimer.Text = Convert.ToString(Convert.ToDouble(labeltimer.Text) + 0.1); // увеличение на 1 сек
         }
         private void Minesweeper_MouseDown(object sender, MouseEventArgs e)
         {
@@ -465,6 +465,11 @@ namespace Лабораторная_работа__3
         private void marksToolStripMenuItem_Click(object sender, EventArgs e)
         {
             marksToolStripMenuItem.Checked = bMark = !bMark;
+        }
+
+        private void labeltimer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
