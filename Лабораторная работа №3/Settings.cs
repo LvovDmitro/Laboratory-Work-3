@@ -16,12 +16,27 @@ namespace Лабораторная_работа__3
         public Settings(Minesweeper main)
         {
             InitializeComponent();
-            Main = main;
+            Main = main; //передача экземпляра род
         }
 
         private void Settings_Load(object sender, EventArgs e)
         {
+            numericUpDownwidth.Value = Convert.ToDecimal(Main.nWidth);
+            numericUpheight.Value = Convert.ToDecimal(Main.nHeight);
+            numericUpDownmine.Value = Convert.ToDecimal(Main.nMineCnt);
+        }
 
+        private void buttonok_Click(object sender, EventArgs e)
+        {
+            Main.nWidth = Convert.ToInt32(numericUpDownwidth.Value);
+            Main.nHeight = Convert.ToInt32(numericUpheight.Value);
+            Main.nMineCnt = Convert.ToInt32(numericUpDownmine.Value);
+            this.Close();
+        }
+
+        private void buttoncancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
