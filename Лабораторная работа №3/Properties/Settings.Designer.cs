@@ -73,10 +73,10 @@ namespace Лабораторная_работа__3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Easy {
+        [global::System.Configuration.DefaultSettingValueAttribute("999")]
+        public double Easy {
             get {
-                return ((int)(this["Easy"]));
+                return ((double)(this["Easy"]));
             }
             set {
                 this["Easy"] = value;
@@ -85,10 +85,10 @@ namespace Лабораторная_работа__3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Medium {
+        [global::System.Configuration.DefaultSettingValueAttribute("999")]
+        public double Medium {
             get {
-                return ((int)(this["Medium"]));
+                return ((double)(this["Medium"]));
             }
             set {
                 this["Medium"] = value;
@@ -97,10 +97,10 @@ namespace Лабораторная_работа__3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Hard {
+        [global::System.Configuration.DefaultSettingValueAttribute("999")]
+        public double Hard {
             get {
-                return ((int)(this["Hard"]));
+                return ((double)(this["Hard"]));
             }
             set {
                 this["Hard"] = value;

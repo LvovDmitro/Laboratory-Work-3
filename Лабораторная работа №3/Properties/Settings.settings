@@ -14,14 +14,14 @@
     <Setting Name="Mark" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="Easy" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+    <Setting Name="Easy" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">999</Value>
     </Setting>
-    <Setting Name="Medium" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+    <Setting Name="Medium" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">999</Value>
     </Setting>
-    <Setting Name="Hard" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+    <Setting Name="Hard" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">999</Value>
     </Setting>
   </Settings>
 </SettingsFile>

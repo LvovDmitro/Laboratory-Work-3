@@ -63,7 +63,7 @@ namespace Лабораторная_работа__3
         }
         private void SelectLevel()
         {
-            if (nWidth == 10 && nHeight == 10 && nMineCnt == 10)
+            if (nWidth == 9 && nHeight == 9 && nMineCnt == 10)
             {
                 easyToolStripMenuItem.Checked = true;
                 mediumToolStripMenuItem.Checked = false;
@@ -386,27 +386,27 @@ namespace Лабораторная_работа__3
             {
                 timer.Enabled = false; 
                 MessageBox.Show(String.Format("Победа：{0} ", labeltimer.Text), "", MessageBoxButtons.OK);
-                if (nWidth == 10 && nHeight == 10 && nMineCnt == 10) 
+                if (nWidth == 9 && nHeight == 9 && nMineCnt == 10) 
                 {
-                    if (Properties.Settings.Default.Easy > Convert.ToInt32(labeltimer.Text))    
+                    if (Properties.Settings.Default.Easy > Convert.ToDouble(labeltimer.Text))    
                     {
-                        Properties.Settings.Default.Easy = Convert.ToInt32(labeltimer.Text);
+                        Properties.Settings.Default.Easy = Convert.ToDouble(labeltimer.Text);
                         Properties.Settings.Default.Save();
                     }
                 }
                 else if (nWidth == 16 && nHeight == 16 && nMineCnt == 40)   
                 {
-                    if (Properties.Settings.Default.Medium > Convert.ToInt32(labeltimer.Text))   
+                    if (Properties.Settings.Default.Medium > Convert.ToDouble(labeltimer.Text))   
                     {
-                        Properties.Settings.Default.Medium = Convert.ToInt32(labeltimer.Text);
+                        Properties.Settings.Default.Medium = Convert.ToDouble(labeltimer.Text);
                         Properties.Settings.Default.Save();
                     }
                 }
                 else if (nWidth == 30 && nHeight == 16 && nMineCnt == 99)   
                 {
-                    if (Properties.Settings.Default.Hard > Convert.ToInt32(labeltimer.Text))   
+                    if (Properties.Settings.Default.Hard > Convert.ToDouble(labeltimer.Text))   
                     {
-                        Properties.Settings.Default.Hard = Convert.ToInt32(labeltimer.Text);
+                        Properties.Settings.Default.Hard = Convert.ToDouble(labeltimer.Text);
                         Properties.Settings.Default.Save();
                     }
                 }
